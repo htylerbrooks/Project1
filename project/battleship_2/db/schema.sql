@@ -23,3 +23,4 @@ CREATE TABLE cells(
   ship_id              INTEGER references ships(id),
   ocean_id           INTEGER references oceans(id)
 );
+/* try and get all the white space so the constraints can be lined up */

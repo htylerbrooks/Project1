@@ -7,3 +7,4 @@ class Card < ActiveRecord::Base
     return " ID: #{id} - Question: #{question} - Answer: #{answer}"
   end
 end
+# looks good

@@ -14,6 +14,8 @@ class Ocean < ActiveRecord::Base
     end
     cells
   end
+  # in line 10 you use an each_with_index enumerable but don't use the index as an iteratee, so you can just use the each method there
+  # other than that the cell_creation method looks great to develop the grid for the game
 
 
   # def ship_creation
@@ -31,6 +33,9 @@ class Ocean < ActiveRecord::Base
   #   ship_end_point = correct_ship_end_point.sample
   #
   # end
+# i think we made real progress here. When you have some time, you can figure this problem out.
+# i think you're really close at placing ships with this method. You could always just hard code ship positions and work from there as well.
+
 
   #
   # def to_s
@@ -41,3 +46,4 @@ end
 
 
 binding.pry
+# take out binding.pry in your final form

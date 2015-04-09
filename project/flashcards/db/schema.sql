@@ -14,3 +14,5 @@ times_correct  INTEGER,
 times_wrong INTEGER,
 deck_id INTEGER References decks(id) NOT NULL
 );
+
+/* looks fine, you may want to line up all the constraints, but not a big deal either way */
