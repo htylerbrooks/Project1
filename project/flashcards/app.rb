@@ -13,7 +13,11 @@ def get_deck
   puts "Which deck?"
   puts Deck.all
   deck_category = gets.chomp.capitalize
+  # instead of above you could put this instead
+  # puts Deck.all
+  # deck_category = get_user_input("Which deck?")
   return Deck.find_by(category:deck_category)
+  # you created a get_user_input method above, why not use it here?
 end
 
 def get_deck_input
@@ -30,6 +34,7 @@ def create_card(deck_id)
   card_attr[:deck_id] = deck_id
   return card_attr
 end
+# nice method, maybe a better method name though? is the method creating a card? or is it just getting user input for the card to be created, maybe get_card_info or something
 
 def get_card(deck)
   puts "Which card? Choose by id"

@@ -7,3 +7,4 @@ class Deck < ActiveRecord::Base
   end
 
 end
+# looks good
